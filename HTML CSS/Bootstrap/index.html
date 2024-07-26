@@ -8,18 +8,19 @@
       href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css"
       rel="stylesheet"
     />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <nav class="bg-green-600 border-gray-200 dark:bg-gray-900 py-60">
+    <nav class="bg-green-500 border-gray-200 fixed w-full mb-24">
       <div
-        class="max-w-screen-xl flex flex-wrap items-center justify-between py-4 mx-9"
+        class="max-w-screen-xl flex flex-wrap items-center justify-between p-6 mx-9"
       >
         <a
           href="https://flowbite.com/"
           class="flex items-center space-x-3 rtl:space-x-reverse"
         >
           <span
-            class="self-center text-white text-2xl font-semibold whitespace-nowrap dark:text-white"
+            class="self-center text-white text-3xl font-semibold whitespace-nowrap dark:text-white"
             >Greed Protocol</span
           >
         </a>
@@ -52,12 +53,12 @@
           id="navbar-default"
         >
           <ul
-            class="bg-green-600 font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-green-600 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 text-white"
+            class="bg-green-500 font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-green-500 text-white"
           >
             <li>
               <a
                 href="#"
-                class="block py-2 px-3 text-black bg-blue-700 rounded md:bg-transparent md:text-black md:p-0 md:dark:text-blue-500"
+                class="block py-2 px-3 text-white rounded md:bg-transparent md:text-white md:p-0"
                 aria-current="page"
                 >Home</a
               >
@@ -95,6 +96,49 @@
       </div>
     </nav>
 
+    <section
+      class="bg-green-400 relative top-20 flex flex-col justify-center items-center"
+    >
+      <h1 class="text-white text-center text-3xl font-black py-10">
+        Green Protocol
+      </h1>
+      <div id="images" class="py-28 flex items-center gap-6">
+        <img
+          src="https://greenprotocol.netlify.app/static/media/4.a3945fe8a5d2e0f9a9c2.png"
+          alt=""
+          class="w-36"
+        />
+        <img
+          src="data:image/png;base64,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"
+          alt=""
+          class="w-28"
+        />
+        <img
+          src="https://greenprotocol.netlify.app/static/media/3.f68aef71096dfba35833.png"
+          alt=""
+          class="w-36"
+        />
+        <img
+          src="data:image/png;base64,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"
+          alt=""
+          class="w-28"
+        />
+        <img
+          src="https://greenprotocol.netlify.app/static/media/1.18666672bd1b15ad77d4.png"
+          alt=""
+          class="w-36"
+        />
+      </div>
+    </section>
+
+    <section id="problems" class="mt-20">
+      <h1
+        id="probHeading"
+        class="px-40 py-24 text-5xl font-black text-green-900 underline decoration-double"
+      >
+        Problem:
+      </h1>
+    </section>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
   </body>
 </html>
