@@ -11,7 +11,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <nav class="bg-green-500 border-gray-200 fixed w-full mb-24">
+    <nav class="bg-green-500 border-gray-200 fixed w-full mb-24 z-10">
       <div
         class="max-w-screen-xl flex flex-wrap items-center justify-between p-6 mx-9"
       >
@@ -134,10 +134,52 @@
     <section id="problems" class="mt-20">
       <h1
         id="probHeading"
-        class="px-40 py-24 text-5xl font-black text-green-900 underline decoration-double"
+        class="px-40 py-24 text-5xl font-black text-green-900"
       >
         Problem:
+        <div id="greenBar" class="w-full h-1 bg-green-600 mt-5"></div>
       </h1>
+      <div
+        id="problemsContent"
+        class="flex justify-center px-40 items-start gap-20"
+      >
+        <p id="probPara" class="w-1/2 font-semibold text-2xl">
+          Major current environmental issues may include climate change,
+          pollution, environmental degradation, and resource depletion. The
+          conservation movement lobbies for protection of endangered species and
+          protection of any ecologically valuable natural areas, genetically
+          modified foods and global warming.
+        </p>
+        <img
+          src="https://greenprotocol.netlify.app/static/media/5.5609c04fba05a424bb7e.png"
+          alt=""
+          class="w-1/4"
+        />
+      </div>
+    </section>
+    <section id="solutions">
+      <h1
+        id="probHeading"
+        class="px-40 py-24 text-5xl font-black text-green-600"
+      >
+        Solutions:
+        <div id="greenBar" class="w-full h-1 bg-green-600 mt-5"></div>
+      </h1>
+      <div id="imgContainer" class="flex justify-center">
+        <img src="image.png" alt="" class="w-3/4" />
+      </div>
+      <div id="solImagesCard">
+        <div id="card1">
+          <img
+            src="https://greenprotocol.netlify.app/static/media/15.4417e6cdc5650ff75447.pn"
+            alt=""
+          />
+          <img
+            src="https://greenprotocol.netlify.app/static/media/14.e49332e78c2a094d6e47.png"
+            alt=""
+          />
+        </div>
+      </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
   </body>
