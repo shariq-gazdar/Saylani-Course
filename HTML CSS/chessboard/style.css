@@ -1,0 +1,35 @@
+body {
+  background-color: chartreuse;
+}
+
+.chess {
+  border: 2px solid black;
+  width: 30vw;
+  margin: 15vh auto;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+.white {
+  background-color: burlywood;
+  height: 3rem;
+  width: 3rem;
+}
+.black {
+  background-color: black;
+  height: 3rem;
+  width: 3rem;
+}
+.pawn {
+  transform: scale(1.7);
+  width: 3rem;
+  object-fit: cover;
+}
+.white:hover {
+  background-color: rgb(240, 163, 62);
+}
+.black:hover {
+  background-color: rgb(51, 51, 51);
+}
