@@ -23,8 +23,5 @@ const renderChat = () => {
     chatContainer.innerHTML += `<div class="chatRecieved">
     <p>Hi Thanks For Messaging</p>
 </div>`;
-  }, 500);
+  }, 100);
 };
-// setInterval(() => {
-//   renderChat();
-// }, 100);
