@@ -13,6 +13,12 @@ let cars = [
     unitsSold: [25000, 7800, 19000],
     Price: [1000, 2500, 950],
   },
+  {
+    brand: "Audi",
+    bestSold: ["R8", "F9 ", "i8"],
+    unitsSold: [5600, 4000, 1500],
+    Price: [5000, 4000, 9999],
+  },
 ];
 cars.forEach((car) => {
   let brand = car.brand;
