@@ -37,10 +37,10 @@ cars.forEach((car) => {
     createdTable.innerHTML += `
         <tr >
         <td class="border border-black px-2" >
-            ${car.bestSold[i]}    
+            ${car.bestSold[i]}
             </td>
             <td class="px-5 border border-black">
-            ${car.unitsSold[i]} 
+            ${car.unitsSold[i]}
             </td>
             <td class="border border-black px-2" >
                 ${car.Price[i]}    $
