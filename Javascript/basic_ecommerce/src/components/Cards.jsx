@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Notify from "./Notify";
 function Cards(props) {
   const [prod, setProd] = useState([]);
+  const [notify, setNotify] = useState(false);
 
   useEffect(() => {
     let products = [
@@ -36,12 +37,16 @@ function Cards(props) {
 
   const cartUpdating = () => {
     props.setCart(props.cart + 1);
+    setNotify(!notify);
+    setTimeout(() => {
+      setNotify(false);
+    }, 1000);
     console.log(props.cart);
   };
   return (
     <>
-      <Notify />
-      <div className="flex justify-center m-10 gap-5 ">
+      <Notify notify={notify} />
+      <div className="flex justify-center m-10 gap-5 overflow-hidden">
         {prod.map((product, index) => (
           <div
             key={index}
