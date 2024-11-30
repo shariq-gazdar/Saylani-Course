@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="flex items-center justify-center min-h-screen bg-gray-100">
+    <div class="bg-white p-5 rounded-lg shadow-lg w-80">
+      <textarea name="displayArea" id="display" class="resize-x"></textarea>
+
+      <!-- Buttons -->
+      <div class="grid grid-cols-4 gap-3">
+        <!-- Number Buttons -->
+        <button
+          class="h-12 bg-gray-200 rounded-lg text-lg font-semibold hover:bg-gray-300"
+          onclick="update(this)"
+        >
+          7
+        </button>
+        <button
+          class="h-12 bg-gray-200 rounded-lg text-lg font-semibold hover:bg-gray-300"
+          onclick="update(this)"
+        >
+          8
+        </button>
+        <button
+          class="h-12 bg-gray-200 rounded-lg text-lg font-semibold hover:bg-gray-300"
+          onclick="update(this)"
+        >
+          9
+        </button>
+        <button
+          class="h-12 bg-orange-500 text-white rounded-lg text-lg font-semibold hover:bg-orange-600"
+          onclick="update(this)"
+        >
+          /
+        </button>
+
+        <button
+          class="h-12 bg-gray-200 rounded-lg text-lg font-semibold hover:bg-gray-300"
+          onclick="update(this)"
+        >
+          4
+        </button>
+        <button
+          class="h-12 bg-gray-200 rounded-lg text-lg font-semibold hover:bg-gray-300"
+          onclick="update(this)"
+        >
+          5
+        </button>
+        <button
+          class="h-12 bg-gray-200 rounded-lg text-lg font-semibold hover:bg-gray-300"
+          onclick="update(this)"
+        >
+          6
+        </button>
+        <button
+          class="h-12 bg-orange-500 text-white rounded-lg text-lg font-semibold hover:bg-orange-600"
+          onclick="update(this)"
+        >
+          *
+        </button>
+
+        <button
+          class="h-12 bg-gray-200 rounded-lg text-lg font-semibold hover:bg-gray-300"
+          onclick="update(this)"
+        >
+          1
+        </button>
+        <button
+          class="h-12 bg-gray-200 rounded-lg text-lg font-semibold hover:bg-gray-300"
+          onclick="update(this)"
+        >
+          2
+        </button>
+        <button
+          class="h-12 bg-gray-200 rounded-lg text-lg font-semibold hover:bg-gray-300"
+          onclick="update(this)"
+        >
+          3
+        </button>
+        <button
+          class="h-12 bg-orange-500 text-white rounded-lg text-lg font-semibold hover:bg-orange-600"
+          onclick="update(this)"
+        >
+          -
+        </button>
+
+        <button
+          class="h-12 bg-gray-200 rounded-lg text-lg font-semibold hover:bg-gray-300 col-span-2"
+          onclick="update(this)"
+        >
+          0
+        </button>
+        <button
+          class="h-12 bg-gray-200 rounded-lg text-lg font-semibold hover:bg-gray-300"
+        >
+          .
+        </button>
+        <button
+          class="h-12 bg-orange-500 text-white rounded-lg text-lg font-semibold hover:bg-orange-600"
+          onclick="update(this)"
+        >
+          +
+        </button>
+
+        <button
+          class="h-12 bg-red-500 text-white rounded-lg text-lg font-semibold hover:bg-red-600 col-span-2"
+        >
+          C
+        </button>
+        <button
+          class="h-12 bg-green-500 text-white rounded-lg text-lg font-semibold hover:bg-green-600 col-span-2"
+        >
+          =
+        </button>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
